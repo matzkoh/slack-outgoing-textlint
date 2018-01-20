@@ -1,0 +1,53 @@
+{
+  "name": "slack-outgoing-textlint",
+  "description": "run textlint by outgoing-webhooks",
+  "version": "1.0.0",
+  "author": {
+    "name": "matzkoh",
+    "url": "https://github.com/matzkoh"
+  },
+  "bugs": "https://github.com/matzkoh/slack-outgoing-textlint/issues",
+  "dependencies": {
+    "@textlint-ja/textlint-rule-no-insert-dropping-sa": "1.0.1",
+    "koa": "2.4.1",
+    "koa-bodyparser": "4.2.0",
+    "koa-json": "2.0.2",
+    "koa-router": "7.3.0",
+    "textlint": "10.1.3",
+    "textlint-rule-ja-hiragana-fukushi": "1.0.3",
+    "textlint-rule-ja-hiragana-hojodoushi": "1.0.4",
+    "textlint-rule-ja-no-redundant-expression": "1.0.3",
+    "textlint-rule-ja-unnatural-alphabet": "1.3.0",
+    "textlint-rule-max-kanji-continuous-len": "1.1.1",
+    "textlint-rule-no-hankaku-kana": "1.0.2",
+    "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "1.0.1",
+    "textlint-rule-prefer-tari-tari": "1.0.3",
+    "textlint-rule-preset-japanese": "4.0.0",
+    "textlint-rule-web-plus-db": "1.1.5"
+  },
+  "devDependencies": {
+    "@types/jest": "22.0.1",
+    "@types/koa": "2.0.43",
+    "@types/koa-bodyparser": "4.2.0",
+    "@types/koa-json": "2.0.18",
+    "@types/koa-router": "7.0.27",
+    "@types/supertest": "2.0.4",
+    "jest": "22.1.4",
+    "supertest": "3.0.0"
+  },
+  "engines": {
+    "node": "9"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "main": "lib/app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matzkoh/slack-outgoing-textlint.git"
+  },
+  "scripts": {
+    "start": "node .",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  }
+}
