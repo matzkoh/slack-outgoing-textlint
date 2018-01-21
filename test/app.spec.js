@@ -28,6 +28,20 @@ describe('POST /textlint', () => {
           expect(body.text).toBeTruthy();
         })
     });
+
+    it('ignore bot message', async () => {
+      await request(app.callback())
+        .post('/textlint')
+        .type('form')
+        .send({
+          text: wrongText,
+          bot_id: 'BOT_ID',
+        })
+        .expect(200)
+        .expect('Content-Type', 'application/json; charset=utf-8')
+        .expect('Content-Length', '2')
+        .expect(res => expect(res.body).toEqual({}));
+    });
   });
 
   describe('no lint error', () => {
