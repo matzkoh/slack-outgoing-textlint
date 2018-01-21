@@ -11,12 +11,28 @@ describe('GET /', () => {
 });
 
 describe('POST /textlint', () => {
+  const post = () => request(app.callback()).post('/textlint');
+
+  describe('throws', () => {
+    it('406 Not Acceptable', async () => {
+      await post()
+        .type('form')
+        .accept('html')
+        .expect(406);
+    });
+
+    it('415 Unsupported Media Type', async () => {
+      await post()
+        .type('json')
+        .expect(415);
+    });
+  });
+
   describe('lint error', () => {
     const wrongText = '柱で、食べれる、じゃぱりまんが、美味しい';
 
     it('respond with json', async () => {
-      await request(app.callback())
-        .post('/textlint')
+      await post()
         .type('form')
         .send({
           text: wrongText,
@@ -30,8 +46,7 @@ describe('POST /textlint', () => {
     });
 
     it('ignore bot message', async () => {
-      await request(app.callback())
-        .post('/textlint')
+      await post()
         .type('form')
         .send({
           text: wrongText,
@@ -46,8 +61,7 @@ describe('POST /textlint', () => {
 
   describe('no lint error', () => {
     it('empty response', async () => {
-      await request(app.callback())
-        .post('/textlint')
+      await post()
         .type('form')
         .send({
           text: '柱で食べるじゃぱりまんが美味しい',
