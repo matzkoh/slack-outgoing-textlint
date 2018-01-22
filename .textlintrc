@@ -1,5 +1,14 @@
 {
-  "filters": {},
+  "filters": {
+    "node-types": {
+      "nodeTypes": [
+        "BlockQuote",
+        "Code",
+        "CodeBlock",
+        "Link"
+      ]
+    }
+  },
   "rules": {
     "@textlint-ja/no-insert-dropping-sa": true,
     "ja-hiragana-fukushi": true,
@@ -13,10 +22,7 @@
     "no-mixed-zenkaku-and-hankaku-alphabet": true,
     "prefer-tari-tari": true,
     "preset-ja-spacing": {
-      "ja-space-around-code": {
-        "before": true,
-        "after": true
-      },
+      "ja-space-around-code": false,
       "ja-space-between-half-and-full-width": {
         "space": "always",
         "exceptPunctuation": true
