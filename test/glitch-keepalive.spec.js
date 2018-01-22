@@ -8,7 +8,7 @@ const keepalive = require('../lib/glitch-keepalive');
 
 describe('glitch-keepalive', () => {
   it('getUrl', () => {
-    expect(keepalive.getUrl('glitch-project-id')).toBe('https://glitch-project-id.glitch.me/keepalive');
+    expect(keepalive.getUrl('glitch-project-id')).toBe('http://glitch-project-id.glitch.me/keepalive');
   });
 
   describe('middleware', () => {
