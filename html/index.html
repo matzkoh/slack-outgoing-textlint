@@ -14,7 +14,7 @@ tech単語にはうるさい。例えば FireFox
     pre.textContent = 'Loading...';
 
     req.onload = () => {
-      const text = JSON.parse(req.responseText).text;
+      const text = JSON.parse(req.responseText).text || '(no error)';
 
       pre.textContent = new Date().toLocaleString() + '\n\n' + text;
     };
