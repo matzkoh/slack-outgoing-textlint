@@ -1,7 +1,6 @@
 const Koa = require('koa');
 const request = require('supertest');
 
-jest.dontMock('../lib/glitch-keepalive');
 jest.useFakeTimers();
 
 const keepalive = require('../lib/glitch-keepalive');
