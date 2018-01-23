@@ -11,6 +11,9 @@
   },
   "rules": {
     "@textlint-ja/no-insert-dropping-sa": true,
+    "date-weekday-mismatch": {
+      "lang": "ja"
+    },
     "ja-hiragana-fukushi": true,
     "ja-hiragana-hojodoushi": true,
     "ja-no-abusage": true,
