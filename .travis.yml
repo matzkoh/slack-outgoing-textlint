@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - 9
+notifications:
+  email: false
+cache:
+  directories:
+    - node_modules
+before_script:
+  - npm prune

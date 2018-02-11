@@ -11,7 +11,7 @@
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": "1.0.1",
     "koa": "2.4.1",
     "koa-bodyparser": "4.2.0",
-    "koa-glitch-keepalive": "github:matzkoh/koa-glitch-keepalive",
+    "koa-glitch-keepalive": "1.1.0",
     "koa-router": "7.4.0",
     "textlint": "10.1.4",
     "textlint-filter-rule-node-types": "1.0.1",
@@ -43,9 +43,14 @@
   "engines": {
     "node": "9"
   },
+  "jest": {
+    "coverageDirectory": "coverage",
+    "collectCoverage": true
+  },
   "keywords": [],
   "license": "MIT",
   "main": "lib/app.js",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/matzkoh/slack-outgoing-textlint.git"
