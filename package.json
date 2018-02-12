@@ -43,6 +43,10 @@
   "engines": {
     "node": "9"
   },
+  "files": [
+    "html",
+    "lib"
+  ],
   "jest": {
     "coverageDirectory": "coverage",
     "collectCoverage": true
