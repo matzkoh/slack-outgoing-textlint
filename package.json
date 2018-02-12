@@ -53,7 +53,7 @@
   },
   "keywords": [],
   "license": "MIT",
-  "main": "lib/app.js",
+  "main": "lib",
   "private": true,
   "repository": {
     "type": "git",
