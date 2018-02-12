@@ -38,6 +38,7 @@
     "@types/koa-router": "7.0.27",
     "@types/supertest": "2.0.4",
     "jest": "22.2.2",
+    "semantic-release": "12.4.1",
     "supertest": "3.0.0"
   },
   "engines": {
@@ -54,7 +55,6 @@
   "keywords": [],
   "license": "MIT",
   "main": "lib",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/matzkoh/slack-outgoing-textlint.git"
