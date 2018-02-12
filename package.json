@@ -1,6 +1,6 @@
 {
-  "name": "slack-outgoing-textlint",
-  "description": "run textlint by outgoing-webhooks",
+  "name": "@matzkoh/slack-outgoing-textlint",
+  "description": "run textlint on outgoing-webhooks",
   "version": "1.0.0",
   "author": {
     "name": "matzkoh",
