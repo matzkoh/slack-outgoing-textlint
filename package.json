@@ -9,7 +9,7 @@
   "bugs": "https://github.com/matzkoh/slack-outgoing-textlint/issues",
   "dependencies": {
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": "1.0.1",
-    "koa": "2.4.1",
+    "koa": "2.5.0",
     "koa-bodyparser": "4.2.0",
     "koa-glitch-keepalive": "1.1.0",
     "koa-router": "7.4.0",
@@ -38,7 +38,7 @@
     "@types/koa-router": "7.0.27",
     "@types/supertest": "2.0.4",
     "codecov": "3.0.0",
-    "jest": "22.2.2",
+    "jest": "22.3.0",
     "semantic-release": "12.4.1",
     "supertest": "3.0.0"
   },
