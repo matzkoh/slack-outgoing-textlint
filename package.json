@@ -13,7 +13,7 @@
     "koa-bodyparser": "4.2.0",
     "koa-glitch-keepalive": "1.1.0",
     "koa-router": "7.4.0",
-    "textlint": "10.1.4",
+    "textlint": "10.2.1",
     "textlint-filter-rule-node-types": "1.0.1",
     "textlint-rule-date-weekday-mismatch": "1.0.5",
     "textlint-rule-ja-hiragana-fukushi": "1.0.3",
@@ -32,7 +32,7 @@
     "textlint-rule-web-plus-db": "1.1.5"
   },
   "devDependencies": {
-    "@types/jest": "22.1.4",
+    "@types/jest": "22.2.2",
     "@types/koa": "2.0.45",
     "@types/koa-bodyparser": "4.2.0",
     "@types/koa-router": "7.0.27",
