@@ -36,6 +36,6 @@
       "4.2.7.コロン(：)": false,
       "4.3.1.丸かっこ（）": false
     },
-    "web-plus-db": true
+    "textlint-rule-spellcheck-tech-word": true
   }
 }
