@@ -32,7 +32,7 @@
     "@types/koa": "2.0.46",
     "@types/koa-bodyparser": "5.0.0",
     "@types/koa-router": "7.0.30",
-    "@types/supertest": "2.0.4",
+    "@types/supertest": "2.0.5",
     "jest": "23.2.0",
     "supertest": "3.1.0"
   },
