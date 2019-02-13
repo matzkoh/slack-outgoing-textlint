@@ -5,7 +5,7 @@ describe('lintText', () => {
     const result = await lintText('柱で、食べれる、じゃぱりまんが、美味しいです。');
 
     expect(result).toBe(
-      '1:6 ら抜き言葉を使用しています。 (preset-japanese/no-dropping-the-ra)\n1:16 一つの文で"、"を3つ以上使用しています (preset-japanese/max-ten)',
+      '1:6 ら抜き言葉を使用しています。 (japanese/no-dropping-the-ra)\n1:16 一つの文で"、"を3つ以上使用しています (japanese/max-ten)',
     );
   });
 
@@ -13,7 +13,7 @@ describe('lintText', () => {
     const result = await lintText('柱で、食べれる、じゃぱりまんが、美味しいです。');
 
     expect(result).toBe(
-      '1:6 ら抜き言葉を使用しています。 (preset-japanese/no-dropping-the-ra)\n1:16 一つの文で"、"を3つ以上使用しています (preset-japanese/max-ten)',
+      '1:6 ら抜き言葉を使用しています。 (japanese/no-dropping-the-ra)\n1:16 一つの文で"、"を3つ以上使用しています (japanese/max-ten)',
     );
   });
 });
