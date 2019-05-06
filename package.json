@@ -33,7 +33,7 @@
     "@types/koa-bodyparser": "4.2.2",
     "@types/koa-router": "7.0.40",
     "@types/supertest": "2.0.7",
-    "jest": "24.7.1",
+    "jest": "24.8.0",
     "supertest": "4.0.2"
   },
   "engines": {
