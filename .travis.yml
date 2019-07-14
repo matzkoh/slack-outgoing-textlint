@@ -14,16 +14,11 @@ jobs:
   include:
     - stage: test
 
-      before_install:
-        - npm i -g codecov greenkeeper-lockfile
-
       before_script:
         - npm prune
-        - greenkeeper-lockfile-update
 
       after_script:
-        - codecov
-        - greenkeeper-lockfile-upload
+        - npx codecov
 
     - stage: release
       if: branch = master
