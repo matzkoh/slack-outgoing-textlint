@@ -12,7 +12,7 @@
     "koa": "2.13.0",
     "koa-bodyparser": "4.3.0",
     "koa-glitch-keepalive": "1.1.0",
-    "koa-router": "9.4.0",
+    "koa-router": "10.0.0",
     "textlint": "11.7.6",
     "textlint-filter-rule-node-types": "1.1.0",
     "textlint-rule-date-weekday-mismatch": "1.0.5",
