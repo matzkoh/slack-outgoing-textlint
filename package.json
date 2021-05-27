@@ -8,7 +8,7 @@
   },
   "bugs": "https://github.com/matzkoh/slack-outgoing-textlint/issues",
   "dependencies": {
-    "@textlint-ja/textlint-rule-no-insert-dropping-sa": "2.0.0",
+    "@textlint-ja/textlint-rule-no-insert-dropping-sa": "2.0.1",
     "koa": "2.13.1",
     "koa-bodyparser": "4.3.0",
     "koa-glitch-keepalive": "1.1.0",
